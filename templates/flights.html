@@ -1,0 +1,7 @@
+<h2>Flights</h2>
+
+{% for f in flights %}
+  <a href="/flight/{{f[0]}}/{{f[1]}}">
+    Flight {{f[0]}} - {{f[1]}} - {{f[2]}} → {{f[3]}}
+  </a><br>
+{% endfor %}
